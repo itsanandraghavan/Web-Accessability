@@ -1,0 +1,44 @@
+@use "../util/" as u;
+.audioBtnContainer{
+    audio{
+        width: 100%;
+    }
+    button{
+        margin: u.rem(20) 0 u.rem(10) 0;
+    }
+
+    @include u.breakpoint-up(lg) {
+        audio{
+            width: 100%;
+            max-width: 300px;
+        }
+        button{
+            margin: 0 u.rem(15);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+}
+.audioTranscription{
+   
+    .audio-to-text{
+        // height: 185px;
+        // overflow-y: auto;
+        .rowDiv{
+            span{
+                font-size: u.rem(14);
+                font-style: italic;
+            }
+        }
+        .audio-to-text-padding{
+            .conversion{
+                margin: u.rem(15);
+                .head{
+                    font-weight: bold;
+                    font-size: u.rem(16);
+                }
+            }
+        }
+    }
+}

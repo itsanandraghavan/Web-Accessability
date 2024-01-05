@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LTIMindtree Web Accessibility Course - Demo</title>
+    <meta
+      name="description"
+      content="LTIMindtree is a global technology consulting and digital solutions company"
+    />
+    <meta name="keywords" content="Software Services, Solutions" />
+    <meta name="author" content="LTIMindtree" />
+    <link rel="canonical" href="https://www.ltimindtree.com/" />
+    <link rel="icon" href="assets/img/LT-Favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="page__skipLinkContainer">
+        <a href="#mainContent" class="page__skipLink"> Skip to main content </a>
+      </div>
+      <!-- Header Section Start -->
+      <header class="pageHeader">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          aria-label="LTIMindtree Navbar"
+        >
+          <div class="container-lg">
+            <!-- Header Logo Section Start -->
+            <a class="navbar-brand pageHeader__primaryLogo" href="index.html"
+              ><img
+                src="assets/img/LTIMindtree_Logo.svg"
+                alt="LTIMindtree Home Logo"
+            /></a>
+            <!-- Header Logo Section End -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#headerPrimaryMenu"
+              aria-controls="headerPrimaryMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Header Section Menu and Search Start -->
+            <div
+              class="collapse navbar-collapse justify-content-lg-center pageHeader__primaryMenu"
+              id="headerPrimaryMenu"
+            >
+              <form
+                class="pageHeader__searchContainer mb-2 mb-lg-0"
+                role="search"
+              >
+                <label for="headerSearch" class="visualHidden">Search</label>
+                <div class="input-group my-3">
+                  <input
+                    id="headerSearch"
+                    type="search"
+                    class="form-control"
+                    placeholder="What are you looking for?"
+                    aria-label="What are you looking for?"
+                    aria-describedby="search-button"
+                  />
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    id="search-button"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+              <ul class="navbar-nav d-lg-none mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="d-none d-lg-flex ms-auto mb-2 mb-lg-0 pageHeader__primaryMenu"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Header Section Menu and Search End -->
+          </div>
+        </nav>
+      </header>
+      <!-- Header Section End -->
+      <!-- Contact Main Section Start -->
+      <main id="mainContent" class="pageContact">
+        <div class="bannerSection pageContact__homeBanner mb-4 mb-lg-5">
+          <img
+            src="assets/img/WeAreLTIMindtree_Web-Contact.png"
+            alt="Ltimindtree Contact Banner"
+          />
+          <h1>Contact Us</h1>
+        </div>
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2 class="mb-3">LTIMindtree Accessibility case study</h2>
+              <p class="mb-3">
+                We believe in solving complex business challenges of the
+                converging world, by using cutting-edge technologies.
+              </p>
+              <h3 class="mb-2">Address</h3>
+              <p class="mb-2">
+                Global village Tech Park, <br />Mysore Rd, RV Vidyaniketan,
+                <br />RVCE, Bengaluru, <br />Karnataka 560059
+              </p>
+              <div class="mapContainer my-4">
+                <img src="assets/img/map.png" alt="Ltimindtree Map Image" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="pageContact__formContainer shadow mb-3">
+                <h2 class="mb-3">Contact Form</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter first name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter last name.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="emailID" class="form-label">Mail ID</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend"
+                        >@</span
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailID"
+                        aria-describedby="inputGroupPrepend"
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">
+                        Please enter valid email address.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="cityName" class="form-label">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cityName"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="stateName" class="form-label">State</label>
+                    <select class="form-select" id="stateName" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>TamilNadu</option>
+                      <option>Karnataka</option>
+                      <option>Kerala</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="pinCode" class="form-label">Zip</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="pinCode"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">
+                      Submit form
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Contact Main Section End -->
+      <!-- Footer Section Start -->
+      <footer class="pageFooter mt-3 mt-lg-4">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 col-md-3 mt-3">
+              <a class="navbar-brand pageFooter__primaryLogo" href="#"
+                ><img
+                  src="assets/img/LTIMindtree_Logo.svg"
+                  alt="LTIMindtree Home Logo"
+              /></a>
+            </div>
+            <div class="col-12 col-md-3 mt-3">
+              <nav class="pageFooter__usefulLinks">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 col-md-3 mt-3">
+              <nav class="pageFooter__usefulLinks">
+                <h3>Sitemap</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 col-md-3 mt-3">
+              <nav class="pageFooter__socialLinks">
+                <h3>Follow Us</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/LTIMindtree"
+                      target="_blank"
+                      alt="Facebook"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="bi bi-facebook"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                        />
+                      </svg>
+                      <span class="visualHidden">Follow us on Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCZsS5innU-V3y-Z6sw2fSfQ"
+                      target="_blank"
+                      alt="Youtue"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="bi bi-youtube"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                        />
+                      </svg>
+                      <span class="visualHidden">Follow us on Youtube</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/ltimindtree/"
+                      target="_blank"
+                      alt="LinkedIn"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="bi bi-linkedin"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                        />
+                      </svg>
+                      <span class="visualHidden">Follow us on LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="pageFooter__copyRight mt-3">
+          <div class="container-fluid">
+            <div class="row align-item-center justify-content-center">
+              <div class="col">
+                <p class="text-center my-2">© 2022 LTIMindtree Limited</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Section End -->
+    </div>
+    <script src="assets/js/jquery-3.6.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

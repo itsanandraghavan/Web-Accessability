@@ -1,0 +1,91 @@
+@use "../util/" as u;
+
+body {
+ // font-family: u.$font;
+  font-size: u.rem(16);
+}
+
+.page {
+  &__skipLinkContainer {
+    position: relative;
+  }
+  &__skipLink {
+    display: table;
+    text-decoration: none;
+    border-radius: u.rem(5);
+    position: absolute;
+    top: u.rem(5); 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #ccc;
+    color: #000;
+    padding: u.rem(4);
+    z-index: 1;
+    font-size: u.rem(11);
+    @include u.breakpoint-up(md) {
+      top: 30px;
+      left: 30px;
+      margin: 0;
+    }
+    &:not(:focus) {
+      border: 0 !important;
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px !important;
+      overflow: hidden;
+      padding: 0px !important;
+      position: absolute !important;
+      width: 1px !important;
+    }
+  }
+}
+
+.visualHidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  overflow: hidden;
+  padding: 0px !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+*:focus {
+  outline: dashed 0.25rem var(--pageOutlineColor) !important;
+  box-shadow: none !important;
+}
+.btn-primary{
+    background-color: var(--pageOutlineColor) !important;
+    border-color: var(--pageOutlineColor) !important;
+}
+
+/*Banner Section*/
+.bannerSection{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: u.rem(200);
+    @include u.breakpoint-up(md) {
+        height: u.rem(300);
+    }
+    @include u.breakpoint-up(lg) {
+        height: u.rem(400);
+    }
+    @include u.breakpoint-up(xl) {
+        height: u.rem(500);
+    }
+    h1{
+        color:var(--pageWhiteColor);
+        font-size: clamp(u.rem(24), u.rem(16) + 2vw, u.rem(48)) !important;
+        position: absolute;
+        margin-inline: u.rem(30);
+        background: rgba(0,0,0,0.4);
+        padding:u.rem(30);
+    }
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

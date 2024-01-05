@@ -1,0 +1,17 @@
+@use "../util/" as u;
+.pageContact{
+    &__formContainer{
+        padding:u.rem(15);
+    }
+    .mapContainer{
+        height: 225px;
+        position: relative;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+   

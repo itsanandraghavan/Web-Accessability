@@ -1,0 +1,56 @@
+@use "../util/" as u;
+.pageFooter {
+  border-top: 1px solid var(--sectionBorderColor);
+  &__primaryLogo {
+    max-width: 200px;
+    display: block;
+  }
+  h3{
+    font-size: u.rem(18);
+  }
+  &__usefulLinks {
+    ul {
+      margin: u.rem(10) 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: u.rem(5) 0;
+        a{
+            color:var(--pageLinkColor) !important;
+            text-decoration: none !important;
+            &:hover, &.active{
+                text-decoration: underline !important;
+                color:var(--pageOutlineColor) !important;
+            }
+        }
+      }
+    }
+  }
+  &__socialLinks {
+    ul {
+      margin: u.rem(15) 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      li {
+        margin: 0 u.rem(20) 0 0;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        a{
+            color:var(--pageLinkColor) !important;
+            text-decoration: none !important;
+            &:hover, &.active{
+                color:var(--pageOutlineColor) !important;
+            }
+        }
+      }
+    }
+  }
+  &__copyRight {
+    background: var(--pageOutlineColor);
+    color: var(--pageWhiteColor);
+    font-size: u.rem(12);
+  }
+}

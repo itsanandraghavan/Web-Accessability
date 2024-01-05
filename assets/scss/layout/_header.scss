@@ -1,0 +1,26 @@
+@use "../util/" as u;
+.pageHeader{
+    border-bottom:1px solid var(--sectionBorderColor);
+    &__primaryLogo{
+        max-width: 200px;
+    }
+    &__primaryMenu{
+        ul{
+            li{
+                margin:0 0 0 u.rem(15);
+                a{
+                    font-size: u.rem(18);
+                    font-weight: 500;
+                    &:hover, &.active{
+                        color:var(--pageOutlineColor) !important;
+                    }
+                }
+            }
+        }
+    }
+    &__searchContainer{
+        .form-control{
+            min-width: u.rem(250);
+        }
+    }
+}
